@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{53210029-C399-4EAF-B439-119BA8AA0E2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{F2BB84AF-C64D-44C7-A387-66E56AED6D77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcWebUI", "MvcWebUI\MvcWebUI.csproj", "{0B72F620-2BD4-4B84-8403-131980D4EFEE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53210029-C399-4EAF-B439-119BA8AA0E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53210029-C399-4EAF-B439-119BA8AA0E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53210029-C399-4EAF-B439-119BA8AA0E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53210029-C399-4EAF-B439-119BA8AA0E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BB84AF-C64D-44C7-A387-66E56AED6D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BB84AF-C64D-44C7-A387-66E56AED6D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BB84AF-C64D-44C7-A387-66E56AED6D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BB84AF-C64D-44C7-A387-66E56AED6D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B72F620-2BD4-4B84-8403-131980D4EFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B72F620-2BD4-4B84-8403-131980D4EFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B72F620-2BD4-4B84-8403-131980D4EFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B72F620-2BD4-4B84-8403-131980D4EFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
