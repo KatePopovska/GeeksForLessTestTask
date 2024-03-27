@@ -22,8 +22,8 @@ namespace DAL.Data
             modelBuilder.Entity<ConfigItem>(entity =>
             {
                 entity.HasKey(x => x.Id);
-                entity.Property(x => x.Name).IsRequired();
-                entity.Property(x => x.Value).IsRequired();
+                entity.Property(x => x.Name).IsRequired(false);
+                entity.Property(x => x.Value).IsRequired(false);
                 entity.HasOne(x => x.Parent)
                 .WithMany(x => x.Childrens)
                 .HasForeignKey(x => x.ParentId)

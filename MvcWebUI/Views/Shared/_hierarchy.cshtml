@@ -1,0 +1,22 @@
+﻿@model DAL.Entities.ConfigItem
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        @if (Model.Childrens.Any())
+        {
+            <ul class="list-group">
+                @foreach (var child in Model.Childrens)
+                {
+                    <li class="list-group-item">
+                        @await Html.PartialAsync("_hierarchy", child)
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="card-text">Value: @Model.Value</p>
+        }
+    </div>
+</div>
